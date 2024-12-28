@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css vari</title>
+</head>
+<style>
+    :root{
+        --color: rgb(245, 115, 115);
+        --secolor: green;
+        
+    }
+    *{
+        margin: 10px;
+        padding: 0;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+    }
+    li{
+        padding: 5px;
+        border: 2px solid black;
+        border-radius: 40%;
+        background-color:#ecdede;
+    }
+    p{
+        background-color: var(--color);
+        --secolor: rgb(13, 61, 237);
+        color: var(--secolor,yellow);
+    }
+</style>
+<body>
+    <script src="script.js"></script>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact us</li>
+        </ul>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, omnis enim animi explicabo et aut debitis ipsa voluptate nam dolorem sapiente soluta doloremque perferendis dolores, deserunt non? In explicabo ipsa exercitationem et officia, expedita hic dolorum modi veniam nemo minus! Excepturi dicta eos voluptas minus?</p>
+    
+</body>
+</html>
